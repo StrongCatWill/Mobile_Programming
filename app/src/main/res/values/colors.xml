@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //탑건 컬러 팔레트 참고
+    <color name="purple_200">#0064626A</color>
+    <color name="purple_500">#39616B</color>
+    <color name="purple_700">#2E3B57</color>
+    <color name="teal_200">#C3B08F</color>
+    <color name="teal_700">#A03229</color>
+    <color name="black">#2C2C2C</color>
+    <color name="white">#FCFDF5</color>
+</resources>

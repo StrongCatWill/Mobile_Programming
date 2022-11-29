@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginRight="24dp"
+    android:background=""
+    android:padding="5dp"
+    app:layout_goneMarginStart="24dp">
+
+
+    <ImageButton
+        android:id="@+id/imgBtn_pofile"
+        android:layout_width="230dp"
+        android:layout_height="280dp"
+        android:background="@color/black"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/tv_callsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="404"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <TextView
+        android:id="@+id/tv_name_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seun Yeon SHIN"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <TextView
+        android:id="@+id/tv_name_kor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신승연"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+
+    <TextView
+        android:id="@+id/tv_backend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BackEnd"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Unarmed Forces of \n the International Developer"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageButton
+        android:id="@+id/Inage_baewha_logo"
+        android:layout_width="126dp"
+        android:layout_height="117dp"
+        android:background="@android:color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/baewha_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <TextView
+        android:id="@+id/tv_activeDuty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active Duty"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <ImageView
+        android:id="@+id/image_ic"
+        android:layout_width="130dp"
+        android:layout_height="182dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_cheap_"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <ImageView
+        android:id="@+id/image_barcode"
+        android:layout_width="203dp"
+        android:layout_height="63dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/barcode"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="422dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_insizd"
+        android:layout_width="182dp"
+        android:layout_height="159dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

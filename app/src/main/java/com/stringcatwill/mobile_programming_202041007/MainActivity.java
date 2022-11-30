@@ -87,7 +87,7 @@ public class MainActivity extends Activity{
         btn_to_vision.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Vision.class);
+                Intent intent = new Intent(getApplicationContext(), Vision_01.class);
                 startActivity(intent);
                 return true;
             }

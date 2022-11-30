@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +12,7 @@
         android:id="@+id/toolbar_title_vision"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Vision"
+        app:title="Vision01"
 
         android:background="@color/teal_200"
         />
@@ -33,7 +34,6 @@
             android:textSize="50dp"
             android:textStyle="bold"
             android:layout_gravity="center"
-
             />
 
         <LinearLayout
@@ -108,14 +108,12 @@
         </LinearLayout>
 
 
-
         <LinearLayout
             android:id="@+id/layout_long_vision_03"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="236dp"
             android:layout_marginTop="10dp"
-            >
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tv_long_jet"
@@ -123,31 +121,33 @@
                 android:layout_height="wrap_content"
 
                 android:text="우주선\n 쏘고\n싶어요"
-                android:textSize="38dp"
-
                 android:textColor="@color/teal_700"
-                android:textStyle="bold"
-                />
+
+                android:textSize="38dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_jet_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="이 과제의 주제를 탑건으로 잡은 이유이기도 하다. 전투기 시뮬레이터를 만드는 엔지니어가 되고 싶다.
-큰 꿈이니 만큼 소중하다. "
-                android:textColor="@android:color/black"
-                android:textSize="15dp"
-
                 android:layout_marginTop="-20dp"
-                />
+                android:text="이 과제의 주제를 탑건으로 잡은 이유이기도 하다. 전투기나 우주선 시뮬레이터를 만드는 엔지니어가 되고 싶다.
+큰 꿈이니 만큼 소중하다. 연구직이고, 상대적으로 소수의 사람들이 관여되어 있는 분야인 만큼 정보를 찾는 것이 쉽지 않지만, 나는 꼭 해낼 것을 믿는다. 하드웨어에
+관여된 지식까지 알아야 하는 만큼, 수시로 관련된 정보들을 검색하여 정독하고 있다. 영어 능력을 위하여 지난 겨울 토익 시험을 봤고, 올해 겨울에 900점 이상을 목표로 다시 시험에 응할 예정이다."
+                android:textColor="@android:color/black"
 
-
-
+                android:textSize="15dp" />
 
         </LinearLayout>
 
-
+        <Button
+            android:id="@+id/btn_vision_to_vision02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT PAGE"
+            android:textSize="25dp"
+            />
     </LinearLayout>
 
 </RelativeLayout>

@@ -60,7 +60,7 @@ public class ID_Card extends Activity {
                 tv_backend_ad.setPositiveButton("이동", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(), Vision.class);
+                        Intent intent = new Intent(getApplicationContext(), Vision_01.class);
                         startActivity(intent);
                     }
                 });

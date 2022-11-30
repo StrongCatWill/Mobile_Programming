@@ -19,14 +19,6 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/tomcat_icon_vision" />
 
-    //튠 계기판, 지금까지의 약력이 담긴 액티비티로 이동
-    <ImageButton
-        android:id="@+id/btn_to_history"
-        android:layout_width="129dp"
-        android:layout_height="145dp"
-        android:layout_below="@+id/btn_to_vision"
-        android:layout_marginLeft="140dp"
-        android:background="@drawable/tomcat_icon_history" />
 
     //고도, 위도 계기판 > 취미 01(영화 및 뮤지컬 페이지로 이동)
     <ImageButton

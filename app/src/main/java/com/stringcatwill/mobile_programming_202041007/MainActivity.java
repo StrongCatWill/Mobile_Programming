@@ -14,7 +14,7 @@ public class MainActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactivity);
 
-        //조이스틱 클릭시, id 해당 버튼을 길게 클릭하면 창으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 넘어가게
+        //조이스틱 클릭시, 해당 버튼을 길게 클릭하면 ID 카드 창으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 넘어가게
         ImageView btn_to_id = (ImageView) findViewById(R.id.btn_to_id);
         btn_to_id.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,6 @@ public class MainActivity extends Activity{
                 return true;
             }
         });
-
 
 
         //고도, 위도 계기판 클릭 > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동.
@@ -55,7 +54,7 @@ public class MainActivity extends Activity{
 
 
 
-        //기체 상태 모니터링 계기판 클릭 > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동.
+        //기체 상태 모니터링 계기판 클릭(동영상 담긴 음악 카테고리) > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동.
         ImageView btn_to_hobby02 = (ImageView)findViewById(R.id.btn_to_hobby02);
         btn_to_hobby02.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +72,6 @@ public class MainActivity extends Activity{
                 return true;
             }
         });
-
 
 
         //조준점 창 클릭 > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동
@@ -96,23 +94,6 @@ public class MainActivity extends Activity{
         });
 
 
-        //튠 조율 계기판 클릭 > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동
-        ImageView btn_to_history = (ImageView)findViewById(R.id.btn_to_history);
-        btn_to_history.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast btn_to_id_toast = Toast.makeText(getApplicationContext(), "튠 계기판을 길게 클릭하면 약력 소개 페이지로 이동합니다", Toast.LENGTH_LONG);
-                btn_to_id_toast.setGravity(Gravity.TOP, Gravity.CENTER, 140);
-            }
-        });
 
-        btn_to_history.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), History.class);
-                startActivity(intent);
-                return true;
-            }
-        });
     }
 }

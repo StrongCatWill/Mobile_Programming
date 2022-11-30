@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="취미02_음악"
+        android:background="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/tv_hobby_title_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Singing"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_singing_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_singing_start"
+            android:layout_width="wrap_content"
+            android:text="Play"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_singing_stop"
+            android:layout_width="wrap_content"
+            android:text="Stop"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_singing_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/img_singing01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/singing_01"
+            />
+
+        <ImageView
+            android:id="@+id/img_singing02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/singing_02"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_hobby_title_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Bass Guitar"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_bass_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_bass_start"
+            android:layout_width="wrap_content"
+            android:text="Play"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_bass_stop"
+            android:layout_width="wrap_content"
+            android:text="Stop"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bass_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/img_bass01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bass_01"
+            />
+
+        <ImageView
+            android:id="@+id/img_bass02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bass_02"
+            />
+    </LinearLayout>
+</LinearLayout>

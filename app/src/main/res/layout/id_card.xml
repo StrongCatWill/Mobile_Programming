@@ -36,7 +36,7 @@
         android:id="@+id/tv_name_eng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seun Yeon SHIN"
+        android:text="Seung Yeon SHIN"
         android:textColor="@color/black"
         android:textSize="42dp"
         android:textStyle="bold"
@@ -184,6 +184,65 @@
         android:layout_below="@+id/tv_StudentID"
         android:layout_toRightOf="@+id/tv_grade_2"
         android:layout_marginLeft="35dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="약력"
+        android:textSize="15dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+
+        android:layout_below="@+id/tv_grade_2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_history_01_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="예일여자중학교 졸업"
+        android:textSize="20dp"
+
+        android:layout_below="@id/tv_history"
+        />
+
+    <TextView
+        android:id="@+id/tv_history_01_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="선정고등학교 과학중점반 입학"
+        android:textSize="20dp"
+
+        android:layout_below="@id/tv_history_01_1"
+        />
+
+    <TextView
+        android:id="@+id/tv_history_01_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="배구부 설립, 서울시 스포츠클럽 지역2등, 주장, 센터"
+        android:textSize="15dp"
+
+        android:layout_below="@id/tv_history_01_2"
+        />
+
+    <TextView
+        android:id="@+id/tv_history_01_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="국어국문과 지원했으나 배화여대 정보보호과 진학"
+        android:textSize="15dp"
+
+        android:layout_below="@id/tv_history_01_3"
         />
 
 </RelativeLayout>

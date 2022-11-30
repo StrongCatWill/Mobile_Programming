@@ -173,7 +173,6 @@ public class Hobby01 extends Activity {
         });
 
 
-
         //다음 페이지로 이동하는 버튼 만들기.
         Button btn_nextPage = (Button)findViewById(R.id.btn_nextPage);
         btn_nextPage.setOnClickListener(new View.OnClickListener(){

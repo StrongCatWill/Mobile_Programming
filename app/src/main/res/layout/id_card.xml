@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,7 @@
     android:layout_marginRight="24dp"
     android:background=""
     android:padding="5dp"
-    app:layout_goneMarginStart="24dp">
+    >
 
 
     <ImageButton
@@ -21,9 +20,7 @@
         android:padding="4dp"
         android:scaleType="fitXY"
         android:src="@drawable/profile_image"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="3dp" />
+        />
 
     <TextView
         android:id="@+id/tv_callsign"
@@ -33,9 +30,9 @@
         android:textColor="@color/black"
         android:textSize="50dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="283dp" />
+
+        android:layout_below="@+id/imgBtn_pofile"
+        />
 
     <TextView
         android:id="@+id/tv_name_eng"
@@ -43,11 +40,12 @@
         android:layout_height="wrap_content"
         android:text="Seun Yeon SHIN"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="42dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="338dp" />
+
+        android:layout_below="@+id/tv_callsign"
+
+        />
 
     <TextView
         android:id="@+id/tv_name_kor"
@@ -55,10 +53,13 @@
         android:layout_height="wrap_content"
         android:text="신승연"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="30dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="298dp" />
+
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imgBtn_pofile"
+        android:layout_toRightOf="@+id/tv_callsign"
+        />
 
 
     <TextView
@@ -69,9 +70,11 @@
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="200dp" />
+
+        android:layout_below="@+id/Inage_baewha_logo"
+        android:layout_toRightOf="@id/imgBtn_pofile"
+        android:layout_marginLeft="5dp"
+         />
 
     <TextView
         android:id="@+id/tv_top"
@@ -79,10 +82,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Unarmed Forces of \n the International Developer"
-        android:textSize="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:textSize="13dp"
+        android:textColor="@android:color/black"
+
+        android:layout_toRightOf="@+id/imgBtn_pofile"
+        />
+
 
     <ImageButton
         android:id="@+id/Inage_baewha_logo"
@@ -91,9 +96,11 @@
         android:background="@android:color/white"
         android:scaleType="fitXY"
         android:src="@drawable/baewha_logo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="78dp" />
+
+        android:layout_toRightOf="@+id/imgBtn_pofile"
+        android:layout_below="@+id/tv_top"
+        android:layout_marginTop="25dp"
+        />
 
     <TextView
         android:id="@+id/tv_activeDuty"
@@ -102,38 +109,82 @@
         android:text="Active Duty"
         android:textColor="@color/black"
         android:textSize="15dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="245dp" />
+
+        android:layout_below="@+id/tv_backend"
+        android:layout_toRightOf="@+id/imgBtn_pofile"
+        android:layout_marginLeft="25dp"
+        />
 
     <ImageView
         android:id="@+id/image_ic"
         android:layout_width="130dp"
         android:layout_height="182dp"
-        android:scaleType="fitXY"
+
         android:src="@drawable/ic_cheap_"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="509dp" />
+        android:layout_toRightOf="@+id/image_barcode"
+        android:layout_below="@+id/tv_name_eng"
+        android:layout_marginTop="170dp"
+         />
 
     <ImageView
         android:id="@+id/image_barcode"
         android:layout_width="203dp"
         android:layout_height="63dp"
+        android:layout_below="@+id/tv_name_eng"
+        android:layout_marginTop="204dp"
+
         android:scaleType="fitXY"
-        android:src="@drawable/barcode"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="422dp"
+        android:src="@drawable/barcode_new" />
+
+    <TextView
+        android:id="@+id/tv_Grade"
+        android:text="Grade"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tv_name_eng"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
         />
 
-    <LinearLayout
-        android:id="@+id/linearlayout_insizd"
-        android:layout_width="182dp"
-        android:layout_height="159dp"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="474dp" />
+    <TextView
+        android:id="@+id/tv_grade_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sophomore"
+        android:textSize="20dp"
+        android:layout_below="@+id/tv_Grade"/>
+    
+    <TextView
+        android:id="@+id/tv_StudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Student ID"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        android:layout_below="@+id/tv_name_eng"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_grade_2"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_studentID_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="202041007"
+        android:textSize="20dp"
+
+        android:layout_below="@+id/tv_StudentID"
+        android:layout_toRightOf="@+id/tv_grade_2"
+        android:layout_marginLeft="35dp"
+        />
+</RelativeLayout>

@@ -61,7 +61,7 @@ public class Hobby01 extends Activity {
                 musical_02_ad.setTitle("뮤지컬 [배니싱]");
                 musical_02_ad.setMessage("경성을 배경으로 하는 남성 3인 뮤지컬\n" +
                         "최근에 제일 많이 본 작품입니다." +
-                        "핵심 대사"+
+                        "핵심 대사\n"+
                         "'피부로 나뉘어 있는 한 우리는 영원히 타인의 감각을 이해할 수 없을 것이다.\n" +
                         "피부를 뚫고, 그와 내가 하나의 동질임을 깨달았을 때, 비로소 이해가 시작된다.' \n" +
                         "의학도와 우생학을 연구하는 친일파, 벰파이어가 등장하지만 본질은 이해에 관한 극." +
@@ -88,7 +88,8 @@ public class Hobby01 extends Activity {
                 AlertDialog.Builder musical_03_ad = new AlertDialog.Builder(Hobby01.this);
 
                 musical_03_ad.setTitle("뮤지컬 [땡큐 베리 스트로베리]");
-                musical_03_ad.setMessage("설명을 적어라 오타쿠");
+                musical_03_ad.setMessage("힐링 뮤지컬. 곧 철거 예정인 폐허에 혼자 사는 할머니에게 휴머노이드 로봇이 배달되는 것으로 시작해요. \n" +
+                        "삶의 아름다움을 세련되게 그려낸 작품이라 다른 뮤지컬인 [전설의 리틀 농구단]과 함께 꼽는 건강한 뮤지컬입니다.");
                 final EditText et = new EditText(Hobby01.this);
                 musical_03_ad.setView(et);
 
@@ -111,7 +112,10 @@ public class Hobby01 extends Activity {
                 AlertDialog.Builder musical_04_ad = new AlertDialog.Builder(Hobby01.this);
 
                 musical_04_ad.setTitle("뮤지컬 [지저스 크라이스트 슈퍼스타]");
-                musical_04_ad.setMessage("설명을 적어라 오타쿠");
+                musical_04_ad.setMessage("가룟유다의 시선에서 본 예수의 이야기. 성경 서술을 기점으로는 예수가 부활하는 구절 직전까지만 진행됩니다.\n" +
+                        "겟세마네가 제일 유명하지만, 아레나 버전의 지저스 크라이스트 슈퍼스타를 본 터라, 활력 넘치는 넘버와 무대 위에 있는 라이브 세션을 매우 좋아합니다." +
+                        "마침 지금 한국버전 지저스 크라이스트 슈퍼스타가 공연중이에요. 그래도 전 락 정서를 100% 살리는 아레나 버전을 제일 사랑합니다."
+                );
                 final EditText et = new EditText(Hobby01.this);
                 musical_04_ad.setView(et);
 

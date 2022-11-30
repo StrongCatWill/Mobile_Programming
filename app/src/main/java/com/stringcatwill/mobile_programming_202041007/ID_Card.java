@@ -9,5 +9,7 @@ public class ID_Card extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.id_card);
+
+
     }
 }

@@ -13,7 +13,37 @@
         android:roundIcon="@drawable/tomcat_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_Programming_202041007"
-        tools:targetApi="31" />
+        tools:targetApi="31" >
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Hobby01"
+            android:exported="true" />
+
+        <activity
+            android:name=".Hobby01_02"
+            android:exported="true" />
+
+        <activity
+            android:name=".Hobby02"
+            android:exported="true" />
+
+        <activity
+            android:name=".ID_Card"
+            android:exported="true" />
+
+        <activity
+            android:name=".Vision_02"
+            android:exported="true" />
+
+        <activity
+            android:name=".Vision_01"
+            android:exported="true" />
+    </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />

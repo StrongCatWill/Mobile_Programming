@@ -33,7 +33,7 @@ public class MainActivity extends Activity{
         });
 
 
-        //고도, 위도 계기판 클릭 > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동.
+        //고도, 위도 계기판 클릭(취미01_뮤지컬, 영화) > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동.
         ImageView btn_to_hobby01 = (ImageView)findViewById(R.id.btn_to_hobby01);
         btn_to_hobby01.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +74,7 @@ public class MainActivity extends Activity{
         });
 
 
-        //조준점 창 클릭 > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동
+        //조준점 창 클릭(비전) > 해당 버튼을 길게 클릭하면 다음 화면으로 이동한다는 메시지 띄우고 길게 클릭하면 화면 이동
         ImageView btn_to_vision = (ImageView)findViewById(R.id.btn_to_vision);
         btn_to_vision.setOnClickListener(new View.OnClickListener() {
             @Override

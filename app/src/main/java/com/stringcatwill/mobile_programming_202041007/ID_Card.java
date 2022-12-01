@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class ID_Card extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ID_Card extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
